@@ -65,4 +65,9 @@ jQuery(function($) {
 		  }
 		}).render().start();
 	});
+	
+	// sugestões
+	var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/z42GZ0nB7WH3zK6EpAAag.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
 });

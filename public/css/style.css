@@ -264,6 +264,10 @@ article {
     border: #146387 1px solid;
 }
 
+#map_canvas {
+    height: 300px;
+}
+
 @media all and (orientation:portrait) { 
   
 }

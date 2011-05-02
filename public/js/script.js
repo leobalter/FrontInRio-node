@@ -1,7 +1,7 @@
 jQuery(function($) { 
 	
 	// Maps
-    var myLatlng = new google.maps.LatLng(-22.95369, -43.16880);
+    var myLatlng = new google.maps.LatLng(-22.952742,-43.172804);
     var myOptions = {
       zoom: 16,
       center: myLatlng,

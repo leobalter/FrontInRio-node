@@ -184,7 +184,7 @@ ul.linear li {
 	right: 10px;
 }
 
-article {
+.hairline {
 	border-bottom: 1px solid #eee;
 	margin-bottom: 22px;
 	padding-bottom: 20px;
@@ -236,13 +236,13 @@ article {
 	margin-bottom: 6px;
 }
 
-#temas h3 {
+.temas h3 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #146387;
 }
 
-#temas {
+.temas {
     list-style: none inside;
     padding-left: 0;
     margin-left: 0;
@@ -250,7 +250,7 @@ article {
     line-height: 1.8em;
 }
 
-#temas > li {
+.temas > li {
     padding: 20px;
     margin-bottom: 20px;
     background: white;
@@ -260,12 +260,30 @@ article {
     border: #fff 1px solid;
 }
 
-#temas > li:hover {
+.temas > li:hover {
     border: #146387 1px solid;
 }
 
 #map_canvas {
     height: 300px;
+}
+
+#apoio a {
+	font-size: 22px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+#apoio .temas {
+	-moz-column-count: 2;
+	-moz-column-width: 300px;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+	-webkit-column-width: 300px;
+	-webkit-column-gap: 20px;
+	column-count: 2;
+	column-width: 300px;
+	column-gap: 20px;
 }
 
 @media all and (orientation:portrait) { 

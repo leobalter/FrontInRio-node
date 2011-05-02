@@ -1,4 +1,6 @@
 jQuery(function($) { 
+	
+	// Maps
     var myLatlng = new google.maps.LatLng(-22.95369, -43.16880);
     var myOptions = {
       zoom: 16,
@@ -27,6 +29,40 @@ jQuery(function($) {
     google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map,marker);
     });
-     
-});
 
+	// Twitter
+	jQuery.getScript('http://widgets.twimg.com/j/2/widget.js', function() {
+		new TWTR.Widget({
+		  id: 'twitter',
+		  version: 2,
+		  type: 'search',
+		  search: 'frontinrio',
+		  interval: 5000,
+		  title: 'FrontInRio 2011',
+		  subject: 'Twitter Feed',
+		  width: 'auto',
+		  height: 300,
+		  theme: {
+		    shell: {
+		      background: '#8ec1da',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#ffffff',
+		      color: '#444444',
+		      links: '#1985b5'
+		    }
+		  },
+		  features: {
+		    scrollbar: false,
+		    loop: true,
+		    live: true,
+		    hashtags: true,
+		    timestamp: true,
+		    avatars: true,
+		    toptweets: true,
+		    behavior: 'default'
+		  }
+		}).render().start();
+	});
+});

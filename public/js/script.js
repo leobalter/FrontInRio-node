@@ -70,4 +70,14 @@ jQuery(function($) {
 	var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
     uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/z42GZ0nB7WH3zK6EpAAag.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+    
+    
+    // js timeslider
+    jQuery.getScript('/js/libs/timeslider.min.js', function() {
+        jQuery('#timeSlider').timeline({
+            "min_zoom" : 2, 
+            "max_zoom" : 10, 
+            "data_source" : "js/frontinrio.json"
+        });
+    });
 });

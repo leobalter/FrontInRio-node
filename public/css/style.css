@@ -286,6 +286,11 @@ ul.linear li {
 	column-gap: 20px;
 }
 
+#timeSlider {
+    height: 250px;
+    margin-bottom: 16px;
+}
+
 @media all and (orientation:portrait) { 
   
 }

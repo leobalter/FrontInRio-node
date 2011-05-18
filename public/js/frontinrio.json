@@ -1,0 +1,124 @@
+[
+{
+    "title": "FrontInRio 2011",
+    "description": "Boas ideias sobre desenvolvimento Front End no Rio de Janeiro",
+    "initial_zoom": "4",
+    "focus_date": "2011-06-04 09:00:00",
+    "id": "frontinrio",
+    "events": [
+        {
+            "id": "abertura",
+            "title": "Abertura",
+            "startdate": "2011-06-04 08:00:00",
+            "enddate": "2011-06-04 09:00:00",
+            "importance":"4",
+            "description": "Abertura do evento, introdução, filosofia, etc" 
+        },
+        {
+            "id": "palestra1",
+            "title": "Palestra 1",
+            "startdate": "2011-06-04 09:00:00",
+            "enddate": "2011-06-04 10:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "palestra2",
+            "title": "Palestra 2",
+            "startdate": "2011-06-04 10:00:00",
+            "enddate": "2011-06-04 11:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "palestra3",        
+            "title": "Palestra 3",
+            "startdate": "2011-06-04 11:00:00",
+            "enddate": "2011-06-04 12:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "almoco",
+            "title": "Intervalo para Almoço",
+            "startdate": "2011-06-04 12:00:00",
+            "enddate": "2011-06-04 14:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "palestra4",
+            "title": "Palestra 4",
+            "startdate": "2011-06-04 14:00:00",
+            "enddate": "2011-06-04 15:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "palestra5",
+            "title": "Palestra 5",
+            "startdate": "2011-06-04 15:00:00",
+            "enddate": "2011-06-04 16:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "coffeBreak",
+            "title": "Coffe Break",
+            "startdate": "2011-06-04 16:00:00",
+            "enddate": "2011-06-04 16:30:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "palestra6",
+            "title": "Palestra 6",
+            "startdate": "2011-06-04 16:30:00",
+            "enddate": "2011-06-04 17:30:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "encerramento",
+            "title": "Encerramento",
+            "startdate": "2011-06-04 17:30:00",
+            "enddate": "2011-06-04 18:00:00",
+            "importance":"4",
+            "description": "Encerramento do Evento" 
+        },
+        {
+            "id": "lightingTalks1",
+            "title": "Lighting Talks e Desconferências",
+            "startdate": "2011-06-04 09:00:00",
+            "enddate": "2011-06-04 10:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "codingdojo1",
+            "title": "Coding Dojo",
+            "startdate": "2011-06-04 10:00:00",
+            "enddate": "2011-06-04 12:00:00",
+            "importance":"4",
+            "description": "Coding Dojo com Javascript" 
+        },
+        {
+            "id": "codingdojo2",
+            "title": "Coding Dojo - Sala B",
+            "startdate": "2011-06-04 14:00:00",
+            "enddate": "2011-06-04 16:00:00",
+            "importance":"4",
+            "description": "" 
+        },
+        {
+            "id": "lightingTalks2",
+            "title": "Lighting Talks e Desconferências",
+            "startdate": "2011-06-04 16:30:00",
+            "enddate": "2011-06-04 17:30:00",
+            "importance":"4",
+            "description": "" 
+        }
+    ]
+
+}
+]

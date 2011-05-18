@@ -17,6 +17,8 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="/css/style.css?v=2">
+    <link rel="stylesheet" href="/css/aristo/jquery-ui-1.8.5.custom.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/timeglider/timeglider.css" type="text/css" media="screen" charset="utf-8">
 
 	<script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
@@ -26,15 +28,17 @@
                 <h1>FrontInRio 2011</h1> 
         </header> 
 
-        <section id="main" class="main"> 
+        <section id="main" class="main" itemscope itemtype="http://data-vocabulary.org/Event"> 
                 <article id="about" class="hairline">
-                    <h2>Sobre o evento</h2> 
+                    <h2>Sobre o evento</h2>
+                    <h3>O que é?</h3>
+                    <p class="phrase original">O <span itemprop="summary">FrontInRio</span> é uma <span itemprop="description">oportunidade da comunidade de desenvolvimento front-end fluminense se conhecer e se aprimorar. Compartilhando experiências para o bem comum.</span></p>
                     <h3>Quando será?</h3> 
-                    <p class="phrase original">O evento vai rolar no dia 4 de Junho de 2011, a partir das 8h até o #horaextra no final do dia.</p> 
+                    <p class="phrase original">O evento vai rolar no dia <time itemprop="startdate" datetime="2011-06-18T08:00-03:00">18 de junho de 2011, a partir das 8h</time> até o #horaextra no final do dia.</p> 
                     <h3>Onde será?</h3> 
-                    <p class="phrase original">O evento será na UniRio, na Av. Pasteur 458, prédio do CCET, sala 204, no bairro da Urca, Rio de Janeiro!</p> 
+                    <p class="phrase original">O evento será na <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/​Organization"><span itemprop="name">UniRio</span>, na <span itemprop="street-address">Av. Pasteur 458, prédio do CCET, sala 204 - Urca</span>, <span itemprop="locality">Rio de Janeiro</span>/<span itemprop="region">RJ</span></span>!</p>
                     <h3>O evento é gratuito?</h3>
-                    <p class="phrase original">Não mas é bem barato!</p>
+                    <p class="phrase original">Não, mas é bem barato!</p>
                     
                     <nav id="share"> 
                         <ul class="clearfix"> 
@@ -54,11 +58,12 @@
 
             </section> 
             <section class="main"> 
-            
                     <h2>Os temas do evento</h2> 
 
-                    <p>Aguarde os temas!</p>
-
+                    <p>
+                        Os temas do evento serão definidos através do <a href="http://call4paperz.com/events/24" title="Call4Paperz do FrontInRio">call4paperz</a>. Lá você pode não só votar em palestras super bacanas que mais te agradam, assim como você pode propor a sua e chamar seus amigos para votarem e fazer o evento bombar!
+                    </p>
+                    <div id="timeSlider"></div>
             </section>                 
 
             <section class="main"> 
@@ -67,7 +72,7 @@
             </section>
             <section class="main"> 
                     <h2>Quer fazer uma apresentação no evento?</h2>
-                    <p>Você pode fazer parte dessa revolução, vá no <a href="http://call4paperz.com/events/24" title="Call4Paperz do FrontInRio">capp4paperz.com e participe!</a></p>
+                    <p>Você pode fazer parte dessa revolução, vá no <a href="http://call4paperz.com/events/24" title="Call4Paperz do FrontInRio">call4paperz.com e participe!</a></p>
             </section>
 
 			<section class="main"> 
@@ -77,7 +82,7 @@
     	    <footer class="main"> 
     	        <section id="contact" class="hairline"> 
     	            <h2>Como entro em contato?</h2> 
-    	            <p>Por enquanto você pode mandar um email para <a href="emailto:contato@frontinrio.com.br" title="Entre em contato com a equipe do FrontInRio">contato@frontinrio.com.br</a>.</p> 
+    	            <p>Por enquanto você pode mandar um email para <a href="mailto:contato@frontinrio.com.br" title="Entre em contato com a equipe do FrontInRio">contato@frontinrio.com.br</a>.</p> 
     	        </section> 
 
 				<section id="apoio">
@@ -91,14 +96,13 @@
 					</ul>
 				</section>
 
-
-
     	    </footer>
 
       </div> <!-- end of #container --> 
 
   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
   	<script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+  	<script type="text/javascript" charset="utf-8" src="/js/libs/jquery-ui-1.8.9.custom.min.js"></script>
   	<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.4&sensor=false&language=pt-BR"></script>
   	<script src="/js/script.js"></script>
   	<!--[if lt IE 7 ]>

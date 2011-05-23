@@ -1,7 +1,7 @@
 Site do FrontInRio
 ==================
 
-HTML estático na pasta public, só isso
+HTML estatico na pasta public, so isso
 
 
 

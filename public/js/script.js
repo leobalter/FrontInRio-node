@@ -73,11 +73,38 @@ jQuery(function($) {
     
     
     // js timeslider
-    jQuery.getScript('/js/libs/timeslider.min.js', function() {
+    jQuery.getScript('js/libs/timeslider.min.js', function() {
         jQuery('#timeSlider').timeline({
             "min_zoom" : 2, 
             "max_zoom" : 10, 
             "data_source" : "js/frontinrio.json"
         });
     });
+    
+    //lista palestras:
+    var listP = jQuery('#listaPalestras');
+    if ( listP.length ) {
+        jQuery.getJSON('js/frontinrio.json', function(data) {
+            var items = [];
+            
+            if ( !data[0].events ) {
+                return;
+            }
+            
+            jQuery.each(data[0].events, function(key, ev) {
+                if ( ev.room ) {
+                    var item  = '<li><h3>'+ev.title+'</h3>';
+                        item += '<p class="description">'+ev.description+'</p>';
+                        item += '<p class="keynoteRoom">Sala: '+ev.room+'</p>';
+                        item += '<p class="keynoteTime">Horário: '+ev.startdate+' até '+ev.enddate+'</p>';
+                        item += '</li>';
+                        
+                    items.push(item);
+                }
+                
+            });
+            
+            jQuery('<ul>'+(items.join(''))+'</ul>').appendTo(listP);
+        });
+    }
 });

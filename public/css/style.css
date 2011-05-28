@@ -291,6 +291,38 @@ ul.linear li {
     margin-bottom: 16px;
 }
 
+#timeglider-measure-span {
+    display: none;
+}
+
+#listaPalestras ul {
+    list-style: none outside;
+    margin-top: 16px;
+    margin-left: 0;
+}
+
+#listaPalestras li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #333;
+    padding-bottom: 6px;
+}
+#listaPalestras h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #146387;
+}
+
+#listaPalestras .keynoteRoom {
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+#listaPalestras .keynoteTime {
+    font-style: italic;
+    font-size: 11px;
+}
+
+
 @media all and (orientation:portrait) { 
   
 }

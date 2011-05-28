@@ -12,8 +12,7 @@
             "startdate": "2011-06-04 08:00:00",
             "enddate": "2011-06-04 09:00:00",
             "importance":"4",
-            "description": "Abertura do evento, introdução, filosofia, etc",
-            "room": "A"
+            "description": "Abertura do evento, introdução, filosofia, etc"
         },
         {
             "id": "palestra1",

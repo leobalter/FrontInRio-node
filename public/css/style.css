@@ -97,6 +97,11 @@ html {
 
 }
 
+#logo {
+    display: block;
+    margin: 0 auto;
+}
+
 .main {
 	-webkit-box-shadow: #A9A8A8 0px 1px 3px;
 	box-shadow: #A9A8A8 0px 1px 3px;
@@ -116,20 +121,23 @@ header {
 header h1 {
    font-size:46px;
    color:#2e2e2e;
-  
-   text-shadow: 0 1px 0 #595959,
-               0 2px 0 #595959,
-               0 3px 0 #5c5c5c,
-               0 4px 0 #8b8b8b,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
     text-align:center;
+    margin: 20px;
+}
+
+.textshadow header h1 {
+    text-shadow: 0 1px 0 #595959,
+                0 2px 0 #595959,
+                0 3px 0 #5c5c5c,
+                0 4px 0 #8b8b8b,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(0,0,0,.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
 }
 
 header .description{
@@ -274,7 +282,7 @@ ul.linear li {
 	text-shadow: 1px 1px 1px #ccc;
 }
 
-#apoio .temas {
+.csscolumns #apoio .temas {
 	-moz-column-count: 2;
 	-moz-column-width: 300px;
 	-moz-column-gap: 20px;
@@ -284,6 +292,7 @@ ul.linear li {
 	column-count: 2;
 	column-width: 300px;
 	column-gap: 20px;
+	min-height: 364px;
 }
 
 #timeSlider {
@@ -296,16 +305,10 @@ ul.linear li {
 }
 
 #listaPalestras ul {
-    list-style: none outside;
     margin-top: 16px;
     margin-left: 0;
 }
 
-#listaPalestras li {
-    margin-bottom: 10px;
-    border-bottom: 1px dotted #333;
-    padding-bottom: 6px;
-}
 #listaPalestras h3 {
     font-size: 14px;
     margin-bottom: 4px;

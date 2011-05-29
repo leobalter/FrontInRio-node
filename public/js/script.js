@@ -104,7 +104,7 @@ jQuery(function($) {
                 
             });
             
-            jQuery('<ul>'+(items.join(''))+'</ul>').appendTo(listP);
+            jQuery('<ul class="temas">'+(items.join(''))+'</ul>').appendTo(listP);
         });
     }
     

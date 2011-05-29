@@ -107,4 +107,9 @@ jQuery(function($) {
             jQuery('<ul>'+(items.join(''))+'</ul>').appendTo(listP);
         });
     }
+    
+    //twitter e facebook
+    
+    jQuery.getScript('http://platform.twitter.com/widgets.js');
+    jQuery.getScript('http://connect.facebook.net/pt_BR/all.js#xfbml=1');
 });

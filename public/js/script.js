@@ -1,115 +1,147 @@
-jQuery(function($) { 
-	
-	// Maps
-    var myLatlng = new google.maps.LatLng(-22.952742,-43.172804);
-    var myOptions = {
-      zoom: 16,
-      center: myLatlng,
-      mapTypeId: google.maps.MapTypeId.HYBRID
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    map.setCenter(myLatlng);
-    
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'FrontInRio 2011'
-    });
+/*jshint forin:true, eqeqeq:true*/
+jQuery.getScript('js/libs/yepnope.js', function($) {
+    var scripts = {
+        gmaps : function() {
+            // Maps
+            var myLatlng = new google.maps.LatLng(-22.952742,-43.172804);
+            var myOptions = {
+                zoom: 16,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            map.setCenter(myLatlng);
 
-    var contentString = '<div style="height:50px"><h1><a href="http://www.frontinrio.com.br">FrontInRio 2011</a></h1>\n';
-    contentString += '<p><strong>Local:</strong> Av. Pasteur 458, prédio do CCET, sala 204, no bairro da Urca, Rio de Janeiro</p></div>';
+            var marker = new google.maps.Marker({
+             position: myLatlng,
+             map: map,
+             title: 'FrontInRio 2011'
+            });
 
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString,
-        position: myLatlng,
-        minHeight: 150
+            var contentString = '<div style="height:50px"><h1><a href="http://www.frontinrio.com.br">FrontInRio 2011</a></h1>\n';
+            contentString += '<p><strong>Local:</strong> Av. Pasteur 458, prédio do CCET, sala 204, no bairro da Urca, Rio de Janeiro</p></div>';
+
+            var infowindow = new google.maps.InfoWindow({
+             content: contentString,
+             position: myLatlng,
+             minHeight: 150
+
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+            });
+        },
+        twitter : function() {
+            // Twitter
+            yepnope({
+                test: jQuery('#twitter').length,
+                yep: 'http://widgets.twimg.com/j/2/widget.js', 
+                callback: function() {
+                    new TWTR.Widget({
+                      id: 'twitter',
+                      version: 2,
+                      type: 'search',
+                      search: 'frontinrio',
+                      interval: 5000,
+                      title: 'FrontInRio 2011',
+                      subject: 'Twitter Feed',
+                      width: 'auto',
+                      height: 300,
+                      theme: {
+                        shell: {
+                          background: '#8ec1da',
+                          color: '#ffffff'
+                        },
+                        tweets: {
+                          background: '#ffffff',
+                          color: '#444444',
+                          links: '#1985b5'
+                        }
+                      },
+                      features: {
+                        scrollbar: false,
+                        loop: true,
+                        live: true,
+                        hashtags: true,
+                        timestamp: true,
+                        avatars: true,
+                        toptweets: true,
+                        behavior: 'default'
+                      }
+                    }).render().start();
+                }
+            });        
+        },
+        twitterButton : function() {
+            // Twitter
+            yepnope({
+                test: jQuery('.twitter-share-button').length,
+                yep: 'http://platform.twitter.com/widgets.js'
+            });
+        },
+        userVoice : function() {
+            yepnope('//widget.uservoice.com/z42GZ0nB7WH3zK6EpAAag.js');
+        },
         
-    });
-
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
-    });
-
-	// Twitter
-	jQuery.getScript('http://widgets.twimg.com/j/2/widget.js', function() {
-		new TWTR.Widget({
-		  id: 'twitter',
-		  version: 2,
-		  type: 'search',
-		  search: 'frontinrio',
-		  interval: 5000,
-		  title: 'FrontInRio 2011',
-		  subject: 'Twitter Feed',
-		  width: 'auto',
-		  height: 300,
-		  theme: {
-		    shell: {
-		      background: '#8ec1da',
-		      color: '#ffffff'
-		    },
-		    tweets: {
-		      background: '#ffffff',
-		      color: '#444444',
-		      links: '#1985b5'
-		    }
-		  },
-		  features: {
-		    scrollbar: false,
-		    loop: true,
-		    live: true,
-		    hashtags: true,
-		    timestamp: true,
-		    avatars: true,
-		    toptweets: true,
-		    behavior: 'default'
-		  }
-		}).render().start();
-	});
-	
-	// sugestões
-	var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/z42GZ0nB7WH3zK6EpAAag.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-    
-    
-    // js timeslider
-    jQuery.getScript('js/libs/timeslider.min.js', function() {
-        jQuery('#timeSlider').timeline({
-            "min_zoom" : 2, 
-            "max_zoom" : 10, 
-            "data_source" : "js/frontinrio.json"
-        });
-    });
-    
-    //lista palestras:
-    var listP = jQuery('#listaPalestras');
-    if ( listP.length ) {
-        jQuery.getJSON('js/frontinrio.json', function(data) {
-            var items = [];
-            
-            if ( !data[0].events ) {
+        timeslider : function() {
+            yepnope({
+                test: jQuery('#timeSlider').length,
+                yep: ['css!css/aristo/jquery-ui-1.8.5.custom.css',
+                        'css!css/timeglider/timeglider.css',
+                        'js/libs/jquery-ui-1.8.9.custom.min.js', 
+                        'js/libs/timeslider.min.js'
+                ],
+                callback: function(url) {
+                    if (url === 'js/libs/timeslider.min.js') {
+                        jQuery('#timeSlider').timeline({
+                            "min_zoom" : 2, 
+                            "max_zoom" : 10, 
+                            "data_source" : "js/frontinrio.json"
+                        });
+                    }
+                }
+            });
+        },
+        
+        listaPalestras : function() {
+            var listP = jQuery('#listaPalestras');
+            if ( !listP.length ) {
                 return;
             }
-            
-            jQuery.each(data[0].events, function(key, ev) {
-                if ( ev.room ) {
-                    var item  = '<li><h3>'+ev.title+'</h3>';
-                        item += '<p class="description">'+ev.description+'</p>';
-                        item += '<p class="keynoteRoom">Sala: '+ev.room+'</p>';
-                        item += '<p class="keynoteTime">Horário: '+ev.startdate+' até '+ev.enddate+'</p>';
-                        item += '</li>';
-                        
-                    items.push(item);
+            jQuery.getJSON('js/frontinrio.json', function(data) {
+                var items = [];
+
+                if ( !data[0].events ) {
+                    return;
                 }
-                
+
+                jQuery.each(data[0].events, function(key, ev) {
+                    if ( ev.room ) {
+                        var item  = '<li><h3>'+ev.title+'</h3>';
+                            item += '<p class="description">'+ev.description+'</p>';
+                            item += '<p class="keynoteRoom">Sala: '+ev.room+'</p>';
+                            item += '<p class="keynoteTime">Horário: '+ev.startdate+' até '+ev.enddate+'</p>';
+                            item += '</li>';
+
+                        items.push(item);
+                    }
+
+                });
+
+                jQuery('<ul class="temas">'+(items.join(''))+'</ul>').appendTo(listP);
             });
-            
-            jQuery('<ul class="temas">'+(items.join(''))+'</ul>').appendTo(listP);
-        });
+        },
+        facebook : function() {
+            yepnope('http://connect.facebook.net/pt_BR/all.js#xfbml=1');
+        }
+    };
+    
+    // execute scripts
+    for ( var i in scripts ){
+        if (scripts.hasOwnProperty(i)) {
+            scripts[i]();
+        }
     }
     
-    //twitter e facebook
-    
-    jQuery.getScript('http://platform.twitter.com/widgets.js');
-    jQuery.getScript('http://connect.facebook.net/pt_BR/all.js#xfbml=1');
 });

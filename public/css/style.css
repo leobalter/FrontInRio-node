@@ -97,6 +97,7 @@ html {background:#f2f1eb;}
     font-family: 'Droid Sans', arial, serif;
 -webkit-transform: rotate(-1deg);
 -moz-transform: rotate(-1deg);
+-o-transform: rotate(-1deg);
 transform: rotate(-1deg);
 
 }
@@ -321,6 +322,7 @@ ul.linear li {
 	color:#fff;
 -webkit-transform: rotate(-1.1deg);
 -moz-transform: rotate(-1.1deg);
+-o-transform: rotate(-1.1deg);
 transform: rotate(-1.1deg);
 margin-left:-40px;
 margin-top:-60px;
@@ -333,6 +335,7 @@ max-width:450px;
   transition-duration: 1s;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
   transform: rotate(0deg);
   background: #146387;
 }
@@ -375,6 +378,7 @@ max-width:450px;
 	width: 100%;
 -webkit-transform: rotate(0deg);
 -moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
 transform: rotate(0deg);
 
 }

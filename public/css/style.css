@@ -294,6 +294,11 @@ ul.linear li {
 }
 #apoio a:hover {border-color:#146387;}
 
+#apoio ul {
+    list-style: none;
+    margin-left: 0;
+}
+
 #timeSlider {
     height: 380px;
     margin-bottom: 16px;

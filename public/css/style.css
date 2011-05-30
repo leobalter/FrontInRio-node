@@ -31,13 +31,16 @@ hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 
 input, select { vertical-align:middle; }
 
 
-body { font:13px/1.231 sans-serif; *font-size:small; } 
+/* fixing firefox bug */
+div:after, ol:after, li:after, form:after, ul:after, dl:after {content:".";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+
+body { font:13px/1.231 sans-serif; *font-size:small;background:#f2f1eb; padding: 0 40px;} 
 select, input, textarea, button { font:99% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 body, select, input, textarea {   color: #444; }
 h1,h2,h3,h4,h5,h6 { font-weight: bold; }
-html { overflow-y: scroll; }
+html { overflow-y: scroll;  overflow-x:hidden;}
 
 a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #607890; }
@@ -86,23 +89,26 @@ button {  width: auto; overflow: visible; }
     Author: Leonardo Balter
  */
 
-html {
-	background: transparent none 0 0 repeat scroll;
-}
+html {background:#f2f1eb;}
 
 #container {
 	margin: 0px auto;
-	width: 806px;
+	width: 860px;
     font-family: 'Droid Sans', arial, serif;
+-webkit-transform: rotate(-1deg);
+-moz-transform: rotate(-1deg);
+transform: rotate(-1deg);
 
 }
 
 #logo {
     display: block;
     margin: 0 auto;
+	position:relative;
+	z-index:2;
 }
 
-.main {
+/*.main {
 	-webkit-box-shadow: #A9A8A8 0px 1px 3px;
 	box-shadow: #A9A8A8 0px 1px 3px;
 	background: #f9f9f9;
@@ -112,10 +118,15 @@ html {
 	padding: 25px 20px 15px;
 	position: relative;
 	width: 648px;
+} */
+.main {
+	margin: 0px auto 20px;
+	position: relative;
 }
 
 header {
 	padding: 30px 0px;
+	margin-bottom:60px;
 }
 
 header h1 {
@@ -124,20 +135,7 @@ header h1 {
     text-align:center;
     margin: 20px;
 }
-
-.textshadow header h1 {
-    text-shadow: 0 1px 0 #595959,
-                0 2px 0 #595959,
-                0 3px 0 #5c5c5c,
-                0 4px 0 #8b8b8b,
-                0 5px 0 #aaa,
-                0 6px 1px rgba(0,0,0,.1),
-                0 0 5px rgba(0,0,0,.1),
-                0 1px 3px rgba(0,0,0,.3),
-                0 3px 5px rgba(0,0,0,.2),
-                0 5px 10px rgba(0,0,0,.25),
-                0 10px 10px rgba(0,0,0,.2),
-                0 20px 20px rgba(0,0,0,.15);
+header div {position: absolute; background:#26251e;height:200px; left:-150px; right:0; width:3000px;top:-50px;	z-index:0;
 }
 
 header .description{
@@ -148,11 +146,16 @@ header .description{
 	text-align: center;
 }
 
-.main h2, .main h1 {
-    font-family: 'Droid Sans', arial, serif;
-    color:#146387;
-    font-size:20px;
-    margin:0px 0px 10px 0px
+h2 {
+    font: normal 3em/1em 'Cabin Sketch', arial, serif;
+    color:#333;
+    margin-bottom: .2em;
+}
+
+p {
+    font: normal 1em/1.4em arial, serif;
+    color:#333;
+    margin-bottom: 1em;
 }
 
 ul.linear {
@@ -166,11 +169,7 @@ ul.linear li {
 
 #main h3 {
     margin-top: 4px;
-}
-
-#about {
-    margin-bottom: 12px;
-}  
+} 
 
 #fromAPI {
     margin-top: 12px;
@@ -193,9 +192,9 @@ ul.linear li {
 }
 
 .hairline {
-	border-bottom: 1px solid #eee;
-	margin-bottom: 22px;
-	padding-bottom: 20px;
+	border-bottom: 1px solid #bfbcad;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
 }
 
 .pagination {
@@ -244,23 +243,17 @@ ul.linear li {
 	margin-bottom: 6px;
 }
 
-.temas h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #146387;
-}
-
 .temas {
     list-style: none inside;
     padding-left: 0;
     margin-left: 0;
-    margin-top: 20px;
+    padding-top: 30px;
     line-height: 1.8em;
 }
 
-.temas > li {
+/*.temas > li {
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     background: white;
     padding: 20px;
     border-radius:0 14px 14px/18px 12px;
@@ -271,29 +264,35 @@ ul.linear li {
 .temas > li:hover {
     border: #146387 1px solid;
 }
+*/
+.temas > li {
+    padding: 20px 20px 40px;
+	border-bottom: 1px solid #bfbcad;
+    margin-bottom: 60px;
+}
+.temas > li:last-child {border: none; padding-bottom:0;margin:0;}
 
 #map_canvas {
     height: 300px;
 }
 
 #apoio a {
-	font-size: 22px;
+	border:1px solid #bfbcad;
+	background:#fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	display: block;
+	height:auto;
+	padding:20px;
+	text-align:center;
+	font: normal 4em/1.1em 'Carter One', arial;
 	text-decoration: none;
-	text-shadow: 1px 1px 1px #ccc;
+	color:#333;
+	letter-spacing: -.02em;
+	margin-bottom:20px;
 }
-
-.csscolumns #apoio .temas {
-	-moz-column-count: 2;
-	-moz-column-width: 300px;
-	-moz-column-gap: 20px;
-	-webkit-column-count: 2;
-	-webkit-column-width: 300px;
-	-webkit-column-gap: 20px;
-	column-count: 2;
-	column-width: 300px;
-	column-gap: 20px;
-	min-height: 364px;
-}
+#apoio a:hover {border-color:#146387;}
 
 #timeSlider {
     height: 380px;
@@ -310,19 +309,47 @@ ul.linear li {
 }
 
 #listaPalestras h3 {
-    font-size: 14px;
-    margin-bottom: 4px;
-    color: #146387;
+    margin-bottom: .8em;
+	font: normal 2em/1.1em 'Carter One', arial;
+	padding:20px;
+	background: #26251e;
+	color:#fff;
+-webkit-transform: rotate(-1.1deg);
+-moz-transform: rotate(-1.1deg);
+transform: rotate(-1.1deg);
+margin-left:-40px;
+margin-top:-60px;
+display: inline-block;
+max-width:450px;
 }
-
+#listaPalestras li:hover h3 {
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: #146387;
+}
+	
+	
 #listaPalestras .keynoteRoom {
-    font-weight: 700;
-    margin: 4px 0;
+    font-weight: bolder;
+	font-size:1.1em;
+    margin: 5px 10px 5px 0;
+	padding:7px 0 7px 32px;
+	background: transparent url(../icon-room.png) no-repeat left top;
+	float:left;
+	width:100px;
+	
 }
 
 #listaPalestras .keynoteTime {
-    font-style: italic;
-    font-size: 11px;
+		float:left;
+	font-size:1.1em;
+    margin: 5px 0;
+	padding:7px 0 7px 36px;
+	background: transparent url(../icon-clock.png) no-repeat left top;
 }
 
 
@@ -334,10 +361,18 @@ ul.linear li {
   
 }
 
-@media screen and (max-device-width: 480px) {
-  
-  
+@media screen and (max-device-width: 800px) {
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+/* large screen */
+@media screen and (max-width: 980px) {	  
+#container {
+	width: 100%;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+transform: rotate(0deg);
+
+}
 }
 
 @media print {

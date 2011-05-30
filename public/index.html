@@ -8,20 +8,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>FrontInRio</title>
-	<meta name="description" content="FrontInRio 2011 - Tudo sobre Desenvolvimento Front-end no Rio de Janeiro, dia 18 de junho na UniRio!">
+	<title>FrontInRio 2011</title>
+	<meta name="description" content="Tudo sobre Desenvolvimento Front-end no Rio de Janeiro, dia 18 de junho na UniRio!">
 	<meta name="author" content="Leo Balter">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/style.css?v=3">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div id="container"> 
         <header> 
-                <img id="logo" src="frontinrio.jpg" alt="FrontInRio 2011" width="330" height="110" />
+                <img id="logo" src="frontinrio.png" alt="FrontInRio 2011" />
+                <div></div>
         </header> 
 
         <section id="main" class="main" itemscope itemtype="http://data-vocabulary.org/Event"> 
@@ -31,8 +34,6 @@
                     <p class="phrase original">O <span itemprop="summary">FrontInRio</span> é uma <span itemprop="description">oportunidade da comunidade de desenvolvimento front-end fluminense se conhecer e se aprimorar. Compartilhando experiências para o bem comum.</span></p>
                     <h3>Quando será?</h3> 
                     <p class="phrase original">O evento vai rolar no dia <time itemprop="startdate" datetime="2011-06-18T08:00-03:00">18 de junho de 2011, a partir das 8h</time> até o #horaextra no final do dia.</p> 
-                    <h3>Onde será?</h3> 
-                    <p class="phrase original">O evento será na <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/​Organization"><span itemprop="name">UniRio</span>, na <span itemprop="street-address">Av. Pasteur 458, prédio do CCET, sala 204 - Urca</span>, <span itemprop="locality">Rio de Janeiro</span>/<span itemprop="region">RJ</span></span>!</p>
                     <h3>O evento é gratuito?</h3>
                     <p class="phrase original">Não, mas é bem barato!</p>
                     
@@ -47,30 +48,35 @@
                         </ul> 
                     </nav> 
                 </article> 
+                <section class="hairline">
+                <h2>Onde será?</h2> 
+                    <p>O evento será na <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/​Organization"><span itemprop="name">UniRio</span>, na <span itemprop="street-address">Av. Pasteur 458, prédio do CCET, sala 204 - Urca</span>, <span itemprop="locality">Rio de Janeiro</span>/<span itemprop="region">RJ</span></span>!</p>
                 
                 <section id="map_canvas"></section>
-
+              </section>
             </section> 
-            <section class="main"> 
+            <section class="main hairline"> 
                     <h2>Os temas do evento</h2> 
 
                     <p>
                         Os temas do evento foram definidos através do <em>call4paperz</em>.
                     </p>
                     <div id="timeSlider"></div>
+            </section>  
+            <section class="main hairline"> 
                     
                     <div id="listaPalestras">
-                        <h2>Você também pode ver uma lista das palestras a seguir:</h2>
+                        <h2>Você também pode ver estas palestras:</h2>
                         
-                    </div>
-            </section>                 
+                    </div>  
+            </section>               
 
-            <section class="main"> 
+            <section class="main hairline"> 
                     <h2>Inscrições</h2>
                     <p>Em breve</p>
             </section>
 
-			<section class="main"> 
+			<section class="main hairline"> 
                     <div id="twitter"></div>
             </section>
 
@@ -82,18 +88,15 @@
 
 				<section id="apoio">
 					<h2>Apoiadores, Idealizadores e Inspiradores:</h2>
-					<ul class="temas">
+					<ul>
 
 						<li><a href="http://www.devinrio.com.br">DevInRio</a></li>
-						<li><a href="http://www.horaextra.org" title="#horaextra"><img src="horaextra.png" width="260px" height="95" alt="#horaextra"/></a></li>
+						<li><a href="http://www.horaextra.org" title="#horaextra"><img src="horaextra.png" alt="#horaextra"/></a></li>
 						<li><a href="http://www.smallactsmanifesto.org">Small Acts</a></li>
-						<li><a href="http://www.desconferencia.com.br" title="Desconferência Podcast"><img src="desconf.png" width="260px" height="79" alt="Desconferência Podcast" /></a></li>
+						<li><a href="http://www.desconferencia.com.br" title="Desconferência Podcast"><img src="desconf.png" alt="Desconferência Podcast" /></a></li>
 					</ul>
 				</section>
     	    </footer>
-            <header>
-                <h1>FrontInRio 2011</h1>
-            </header>
       </div> <!-- end of #container --> 
       
 	<script src="js/libs/modernizr-1.7.min.js"></script>

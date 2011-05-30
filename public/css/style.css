@@ -277,7 +277,7 @@ ul.linear li {
     height: 300px;
 }
 
-#apoio a {
+.apoio a {
 	border:1px solid #bfbcad;
 	background:#fff;
     border-radius: 10px;
@@ -293,9 +293,9 @@ ul.linear li {
 	letter-spacing: -.02em;
 	margin-bottom:20px;
 }
-#apoio a:hover {border-color:#146387;}
+.apoio a:hover {border-color:#146387;}
 
-#apoio ul {
+.apoio ul {
     list-style: none;
     margin-left: 0;
 }

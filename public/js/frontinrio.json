@@ -25,20 +25,20 @@
         },
         {
             "id": "palestra2",
-            "title": "Seletores - Fabio Costa",
+            "title": "Alinhando o design às métricas e conversões - Rafael Lima",
             "startdate": "2011-06-18 10:00:00",
             "enddate": "2011-06-18 11:00:00",
             "importance":"4",
-            "description": "A API de manipulação do DOM é a mais lenta e inconsistente entre browsers que os programadores client têm acesso. Conheça e saiba como funciona uma engine de seleção de elementos DOM (Slick, Sizzle, micro-selector, etc), onde elas são usadas e como otimizar seletores CSS nessas engines para comparação e busca de elementos." ,
+            "description": "Todo website deveria ter o objetivo bem definido. Nada vale um belo design sem um bom propósito. O fron-end de um website deve ser implementado de forma iterativa a partir do feedback de um sistema de métricas afim de alcançar o objetivo. Nesta palestra iremos ver como montar uma landing page, realizar testes A/B e realizar mudanças no front-end da aplicação afim de aumentar as conversões" ,
             "room": "A"
         },
         {
-            "id": "palestra3",        
-            "title": "Quero ser um ninja em xHTML, HTML5 e CSS3 - Bernard de Luna",
+            "id": "palestra3",
+            "title": "Desbravando o HTML5 Boilerplate - Zeno Rocha",
             "startdate": "2011-06-18 11:00:00",
             "enddate": "2011-06-18 12:00:00",
             "importance":"4",
-            "description": "Já sabe codificar? Quer chegar a um nível destacado no mercado? Práticas avançadas de documentação, velocidade de codificação, modularização. Tudo isso recheado a muitas dicas de corte de layouts e inovações em CSS3!" ,
+            "description": "Entenda as funcionalidades do ambiente mais robusto para utilização do HTML5. Não seja mais um passageiro. Use as novas tags sem medo. Totalmente cross-browser. Otimizado para navegadores mobile. E com muito mais performance. Conheça a coleção de truques para começar seu projeto HTML5 com mais eficiência." ,
             "room": "A"
         },
         {
@@ -51,11 +51,11 @@
         },
         {
             "id": "palestra4",
-            "title": "Alinhando o design às métricas e conversões - Rafael Lima",
+            "title": "Seletores - Fabio Costa",
             "startdate": "2011-06-18 14:00:00",
             "enddate": "2011-06-18 15:00:00",
             "importance":"4",
-            "description": "Todo website deveria ter o objetivo bem definido. Nada vale um belo design sem um bom propósito. O fron-end de um website deve ser implementado de forma iterativa a partir do feedback de um sistema de métricas afim de alcançar o objetivo. Nesta palestra iremos ver como montar uma landing page, realizar testes A/B e realizar mudanças no front-end da aplicação afim de aumentar as conversões" ,
+            "description": "A API de manipulação do DOM é a mais lenta e inconsistente entre browsers que os programadores client têm acesso. Conheça e saiba como funciona uma engine de seleção de elementos DOM (Slick, Sizzle, micro-selector, etc), onde elas são usadas e como otimizar seletores CSS nessas engines para comparação e busca de elementos." ,
             "room": "A"
         },
         {
@@ -76,12 +76,12 @@
             "description": "" 
         },
         {
-            "id": "palestra6",
-            "title": "Desbravando o HTML5 Boilerplate - Zeno Rocha",
+            "id": "palestra6",        
+            "title": "Quero ser um ninja em xHTML, HTML5 e CSS3 - Bernard de Luna",
             "startdate": "2011-06-18 16:30:00",
             "enddate": "2011-06-18 17:30:00",
             "importance":"4",
-            "description": "Entenda as funcionalidades do ambiente mais robusto para utilização do HTML5. Não seja mais um passageiro. Use as novas tags sem medo. Totalmente cross-browser. Otimizado para navegadores mobile. E com muito mais performance. Conheça a coleção de truques para começar seu projeto HTML5 com mais eficiência." ,
+            "description": "Já sabe codificar? Quer chegar a um nível destacado no mercado? Práticas avançadas de documentação, velocidade de codificação, modularização. Tudo isso recheado a muitas dicas de corte de layouts e inovações em CSS3!" ,
             "room": "A"
         },
         {

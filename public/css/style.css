@@ -109,17 +109,6 @@ transform: rotate(-1deg);
 	z-index:2;
 }
 
-/*.main {
-	-webkit-box-shadow: #A9A8A8 0px 1px 3px;
-	box-shadow: #A9A8A8 0px 1px 3px;
-	background: #f9f9f9;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	margin: 0px auto 20px;
-	padding: 25px 20px 15px;
-	position: relative;
-	width: 648px;
-} */
 .main {
 	margin: 0px auto 20px;
 	position: relative;

@@ -112,13 +112,14 @@
         },
         {
             "id": "palestra3b",
-            "title": "Otimizando o carregamento de sites com jQuery - Thiago Belem",
+            "title": "Android UI Design Patterns & Melhores Praticas - Oscar Marques",
             "startdate": "2011-06-18 11:00:00",
             "enddate": "2011-06-18 12:00:00",
             "importance":"4",
-            "description": "Otimize o carregamento de sites utilizando jQuery para fazer requisições assíncronas, pós-loadings, carregamento on demand e etc." ,
+            "description": "Palestra sobre desenvolvimento de interfaces para mobiles usando Android" ,
             "room": "B"
         },
+
         {
             "id": "palestra4b",
             "title": "Engenharia de Frontend de Alta Performance - Anderson Solano",
@@ -130,11 +131,11 @@
         },
         {
             "id": "palestra5b",
-            "title": "Android UI Design Patterns & Melhores Praticas - Oscar Marques",
+            "title": "Otimizando o carregamento de sites com jQuery - Thiago Belem",
             "startdate": "2011-06-18 15:00:00",
             "enddate": "2011-06-18 16:00:00",
             "importance":"4",
-            "description": "Palestra sobre desenvolvimento de interfaces para mobiles usando Android" ,
+            "description": "Otimize o carregamento de sites utilizando jQuery para fazer requisições assíncronas, pós-loadings, carregamento on demand e etc." ,
             "room": "B"
         },
         {

@@ -84,26 +84,6 @@ jQuery.getScript('js/libs/yepnope.js', function($) {
             yepnope('//widget.uservoice.com/z42GZ0nB7WH3zK6EpAAag.js');
         },
         
-        timeslider : function() {
-            yepnope({
-                test: jQuery('#timeSlider').length,
-                yep: ['css!css/aristo/jquery-ui-1.8.5.custom.css',
-                        'css!css/timeglider/timeglider.css',
-                        'js/libs/jquery-ui-1.8.9.custom.min.js', 
-                        'js/libs/timeslider.min.js'
-                ],
-                callback: function(url) {
-                    if (url === 'js/libs/timeslider.min.js') {
-                        jQuery('#timeSlider').timeline({
-                            "min_zoom" : 2, 
-                            "max_zoom" : 10, 
-                            "data_source" : "js/frontinrio.json"
-                        });
-                    }
-                }
-            });
-        },
-        
         listaPalestras : function() {
             var listP = jQuery('#listaPalestras');
             if ( !listP.length ) {

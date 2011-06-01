@@ -125,8 +125,7 @@ header h1 {
     text-align:center;
     margin: 20px;
 }
-header div {position: absolute; background:#26251e;height:200px; left:-600px; right:0; width:3000px;top:-50px;	z-index:0;
-}
+header div {position: absolute; background:#26251e;height:200px; left:-600px; right:0; width:3000px;top:-50px;	z-index:0;}
 
 header .description{
     display: block;
@@ -137,7 +136,9 @@ header .description{
 }
 
 h2 {
-    font: normal 3em/1em 'Cabin Sketch', arial, serif;
+    font-family: 'Miltonian Tattoo', arial, serif;
+    font-size: 36px;
+    font-weight: 700;
     color:#333;
     margin-bottom: .2em;
 }

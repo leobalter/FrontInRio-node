@@ -36,20 +36,6 @@ jQuery.getScript('js/libs/yepnope.js', function($) {
                 yep: 'http://platform.twitter.com/widgets.js'
             });
         },
-        webfonts : function() {
-            WebFontConfig = {
-                google: { families: [ 'Carter One', 'Cabin Sketch:bold' ] }
-              };
-              (function() {
-                var wf = document.createElement('script');
-                wf.src = ('https:' === document.location.protocol ? 'https' : 'http') +
-                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-                wf.type = 'text/javascript';
-                wf.async = 'true';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(wf, s);
-              })();
-        },
         gmaps : function() {
             // Maps
             var myLatlng = new google.maps.LatLng(-22.952742,-43.172804);

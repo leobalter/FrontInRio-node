@@ -1,6 +1,55 @@
 /*jshint forin:true, eqeqeq:true*/
 jQuery.getScript('js/libs/yepnope.js', function($) {
     var scripts = {
+        listaPalestras : function() {
+            var listP = jQuery('#listaPalestras');
+            if ( !listP.length ) {
+                return;
+            }
+            jQuery.getJSON('js/frontinrio.json', function(data) {
+                var items = [];
+
+                if ( !data[0].events ) {
+                    return;
+                }
+
+                jQuery.each(data[0].events, function(key, ev) {
+                    if ( ev.room ) {
+                        var item  = '<li><h3>'+ev.title+'</h3>';
+                            item += '<p class="description">'+ev.description+'</p>';
+                            item += '<p class="keynoteRoom">Sala: '+ev.room+'</p>';
+                            item += '<p class="keynoteTime">Horário: '+ev.startdate+' até '+ev.enddate+'</p>';
+                            item += '</li>';
+
+                        items.push(item);
+                    }
+
+                });
+
+                jQuery('<ul class="temas">'+(items.join(''))+'</ul>').appendTo(listP);
+            });
+        },
+        twitterButton : function() {
+            // Twitter
+            yepnope({
+                test: jQuery('.twitter-share-button').length,
+                yep: 'http://platform.twitter.com/widgets.js'
+            });
+        },
+        webfonts : function() {
+            WebFontConfig = {
+                google: { families: [ 'Carter One', 'Cabin Sketch:bold' ] }
+              };
+              (function() {
+                var wf = document.createElement('script');
+                wf.src = ('https:' === document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+              })();
+        },
         gmaps : function() {
             // Maps
             var myLatlng = new google.maps.LatLng(-22.952742,-43.172804);
@@ -73,47 +122,11 @@ jQuery.getScript('js/libs/yepnope.js', function($) {
                 }
             });        
         },
-        twitterButton : function() {
-            // Twitter
-            yepnope({
-                test: jQuery('.twitter-share-button').length,
-                yep: 'http://platform.twitter.com/widgets.js'
-            });
+        facebook : function() {
+            yepnope('http://connect.facebook.net/pt_BR/all.js#xfbml=1');
         },
         userVoice : function() {
             yepnope('//widget.uservoice.com/z42GZ0nB7WH3zK6EpAAag.js');
-        },
-        
-        listaPalestras : function() {
-            var listP = jQuery('#listaPalestras');
-            if ( !listP.length ) {
-                return;
-            }
-            jQuery.getJSON('js/frontinrio.json', function(data) {
-                var items = [];
-
-                if ( !data[0].events ) {
-                    return;
-                }
-
-                jQuery.each(data[0].events, function(key, ev) {
-                    if ( ev.room ) {
-                        var item  = '<li><h3>'+ev.title+'</h3>';
-                            item += '<p class="description">'+ev.description+'</p>';
-                            item += '<p class="keynoteRoom">Sala: '+ev.room+'</p>';
-                            item += '<p class="keynoteTime">Horário: '+ev.startdate+' até '+ev.enddate+'</p>';
-                            item += '</li>';
-
-                        items.push(item);
-                    }
-
-                });
-
-                jQuery('<ul class="temas">'+(items.join(''))+'</ul>').appendTo(listP);
-            });
-        },
-        facebook : function() {
-            yepnope('http://connect.facebook.net/pt_BR/all.js#xfbml=1');
         }
     };
     

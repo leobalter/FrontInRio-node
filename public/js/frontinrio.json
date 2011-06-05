@@ -140,11 +140,11 @@
         },
         {
             "id": "palestra6b",
-            "title": "Você testa a sua interface? - Sidney Filho",
+            "title": "Cavnas vs. SVG - Davidson Fellipe",
             "startdate": "2011-06-18 16:30:00",
             "enddate": "2011-06-18 17:30:00",
             "importance":"4",
-            "description": "Aprenda de forma definitiva como e porque testar sua interface, automatizá-la e garantir que não apenas seu código está funcionando mas que sua interface está mostrando o que programou." ,
+            "description": "Conheça as principais diferenças entre os dois formatos e tenha uma visão do que se pode fazer com ambas tecnologias." ,
             "room": "B"
         }
     ]

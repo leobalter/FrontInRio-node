@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+body {font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#777777; font-style:normal; background:url(../img/bg-all.jpg);}
+h1, h2, h3, h4, h5 { display:block; }
+h1 a:hover {text-decoration:none;}
+h2 { font-size:1.8em; color:#2b2b2b; }
+h3 { font-size:2.5em; line-height:1.4em; color:#2b2b2b; text-transform: uppercase;}
+h4 { font-size:1.6em; color:#777777; }
+
+p { line-height:1.4em; color:#434343; font-size:1.6em; margin-bottom: 1.2em;}
+strong { font-weight:bold }
+a { color: #008fe1; text-decoration:none; }
+a:hover { text-decoration:underline; }
+address { color:#2b2b2b; font-size:2.2em; line-height:18px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+hr {display:none;}
+
+
+.wrapper {width:940px; margin:0 auto; position:relative;}
+
+.content-header {padding-top:30px;}
+#header {background: #2d3a58 url(../img/panel.jpg) no-repeat center bottom;background-size: 100% auto; height:480px;border-top:3px solid #ff0388;}
+#logo {float:left; width:214px; height:102px;}
+#logo a {display:block; background:url(../img/logo.png) left top no-repeat; width:214px; height:102px; text-indent:-9999px;}
+
+.social {position:absolute; right:0px; top:20px;}
+.social li {float:left; margin:0 6px 0 0;}
+
+.social li.twitter a {display:block; background:url('../img/socials.png') no-repeat -3px -5px; width:35px; height:35px; text-indent:-9999px;}
+.social li.twitter a:hover, .social li.twitter a:focus {background: url('../img/socials.png') no-repeat -3px -44px;}
+
+.social li.facebook a {display:block; background:url('../img/socials.png') no-repeat -44px -5px; width:35px; height:35px; text-indent:-9999px;}
+.social li.facebook a:hover, .social li.facebook a:focus {background: url('../img/socials.png') no-repeat -44px -44px;}
+
+#header .nav {float:right; margin:80px 0 0 0;}
+#header .nav li {float:left; margin-left:20px;}
+#header .nav li a {color:#ecde53; text-transform: uppercase; letter-spacing: -.04em; font-size:1.8em;text-shadow: 0 1px 1px rgba(0,0,0,.4)}
+#header .nav li a:hover, #header .nav li a:focus {color:#ff0388; text-decoration:none;}
+
+.release {margin:30px 0 0 0; width:480px; height:290px; float:left;}
+.release h2 {font-size:4.0em; color:#eeeeee; margin:0 0 15px 0;}
+.release p {font-size:1.6em; color:#eee; width:480px; line-height:22px;margin-bottom:0;}
+.assuntos {width:175px; height:123px; float:right; margin:-114px 0 0 0;}
+.data {margin:0px 0 0 0;}
+.dia {font-size:10.5em; color:#ecde53; float:left; font-weight:inherit; letter-spacing:-0.09em;}
+.mes {float:left; margin:47px 0 0 10px; font-size:2.0em; color:#eee;}
+.mes span {display:block; font-size:1.5em; margin:-5px 0 0 0;}
+
+.participar {float:left; margin:110px 0 0 170px;}
+.btn-participar {display:block; background:url(../img/bg-btn-participar.png) left top no-repeat; width:260px; height:61px; color:#eee; text-align:center; font-size:4.0em; padding:15px 0 0 0; text-shadow: 1px 1px 1px #313131;border-radius: 6px;box-shadow: 0 2px 10px 1px rgba(0,0,0,.2);}
+.btn-participar:hover, a.btn-participar:focus {position:relative;top:2px;text-decoration:none; color:#fff;}
+.infos-participar {margin:0 0 20px 0;}
+.prazo {margin-left:35px;}
+.prazo, .preco-normal {float:right;}
+.prazo {text-align:right; font-size:1.6em; font-weight:bold; color:#eee; border-right:1px solid #eee; padding-right:15px; margin-right:15px;}
+.preco-normal {font-size:1.6em; color:#eee; margin:-20px 0 0 0;text-shadow: 2px 2px 5px rgba(0,0,0,.2), -2px -2px 5px rgba(0,0,0,.2)}
+.preco-normal span {font-size:3.8em; margin:0 0 0 3px;}
+.participar p {font-size:1.1em; text-align:center; color:#b7b7b7;}
+
+#content {margin:20px 0;}
+#content h2 {font-size:4.0em; color:#818285; text-shadow: 1px 1px 1px #fff; border-left:7px solid #818285; padding-left:20px; margin:70px 0 30px -25px; letter-spacing:-0.03em;}
+#content p {text-shadow: 1px 1px 1px #fff;}
+
+#palestras ul li {clear:both; padding-bottom: 30px;margin-bottom:30px; border-bottom:1px dashed #ccc;}
+
+/*#palestras ul li:nth-child(odd) p, #palestras ul li:nth-child(odd) h3, #palestras ul li:nth-child(odd) h4 {text-align:right;}
+#palestras ul li:nth-child(odd) .foto-palestrante {float:right;}*/
+#palestras h3 span {line-height:1.6em; vertical-align: middle; font-size:.7em; font-weight:bolder;display: inline-block; padding:5px 8px; border-radius: 4px; background: #2b2b2b; color:#f5f5f5; margin-right:5px;}
+#palestras h4 {color:#ff0388; font-weight:bold; margin:0 0 5px 0; text-shadow: 1px 1px 1px #eee; margin:15px 0 10px 0;}
+.foto-palestrante {float:left; background:url(../img/bg-foto-palestrante.png) left top no-repeat; width:181px; height:167px; margin:-2px 15px 10px 10px;}
+.foto-palestrante img {margin:8px 0 0 10px;}
+.social-palestrantes {margin:-15px 0 0 0;}
+.social-palestrantes a {color:#777;height:21px;font-size:1.4em;vertical-align: middle;line-height: 21px;}
+.social-palestrantes a img {vertical-align: middle;position:relative;top:-2px;}
+
+#mapa {border:5px solid #FFF; margin:20px 0;}
+
+#form fieldset {float:left; width:50%; margin:20px 0;}
+#form label {display:block; color:#434343; font-size:1.4em; font-weight:bold; margin:15px 0 6px 0; text-shadow: 1px 1px 1px #fff;}
+#form input, #form textarea {-moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; padding:10px; width:80%; border:1px solid #c4c3c3; color:#818285;}
+#form textarea {height:90px;}
+
+.enviar {background:none; border:none !important; width:80px !important; float:right; margin:0 60px 0 0; color:#818285; font-size:2.0em; text-shadow: 1px 1px 1px #fff; cursor:pointer;}
+.enviar:hover {color:#313131;}
+
+#evento p {width:600px;}
+#evento .btn-participar {float:right;}
+
+#patrocinadores ul li {float:left; margin:0 40px 0 0;position:relative;}
+
+.subir {background:url(../img/arrow-subir.png) left top no-repeat; display:block; width:39px; height:56px; text-indent:-9999px; float:right; margin:0 20px 0;}

@@ -31,7 +31,7 @@ hr {display:none;}
 .social li.facebook a {display:block; background:url('../img/socials.png') no-repeat -44px -5px; width:35px; height:35px; text-indent:-9999px;}
 .social li.facebook a:hover, .social li.facebook a:focus {background: url('../img/socials.png') no-repeat -44px -44px;}
 
-#header .nav {float:right; margin:80px 0 0 0;}
+#header .nav {float:right; margin:50px 0 0 0;}
 #header .nav li {float:left; margin-left:20px;}
 #header .nav li a {color:#ecde53; text-transform: uppercase; letter-spacing: -.04em; font-size:1.8em;text-shadow: 0 1px 1px rgba(0,0,0,.4)}
 #header .nav li a:hover, #header .nav li a:focus {color:#ff0388; text-decoration:none;}

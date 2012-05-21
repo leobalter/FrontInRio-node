@@ -85,6 +85,6 @@ hr {display:none;}
 #evento p {width:600px;}
 #evento .btn-participar {float:right;}
 
-#patrocinadores ul li {float:left; margin:0 40px 0 0;position:relative;}
+#patrocinadores ul li {float:left; margin:0 40px 40px 0;position:relative;}
 
 .subir {background:url(../img/arrow-subir.png) left top no-repeat; display:block; width:39px; height:56px; text-indent:-9999px; float:right; margin:0 20px 0;}

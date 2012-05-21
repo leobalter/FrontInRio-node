@@ -9,15 +9,20 @@
 $(document).ready(function(){
     $('a[href^="#"]').bind('click.smoothscroll',function (e) {
         e.preventDefault();
-     
+
         var target = this.hash,
         $target = $(target);
-     
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
+    });
+
+    $(".participar .btn-participar").unbind().bind('click', function(e){
+        e.preventDefault();
+        $("#form_pagseguro").submit();
     });
 });
 </script>
@@ -31,12 +36,12 @@ $(document).ready(function(){
 	<div class="wrapper">
         <div class="content-header">
             <h1 id="logo"><a href="#header" title="Front in Rio">Front in Rio 2012</a></h1>
-            
+
             <!-- <ul class="social">
                 <li class="twitter"><a href="http://www.twitter.com/" title="Twitter">Twitter</a></li>
                 <li class="facebook"><a href="http://www.facebook.com/" title="Facebook">Facebook</a></li>
             </ul> -->
-            
+
             <ul class="nav">
                 <li><a href="#informacoes" title="O Evento">O Evento</a></li>
                 <li><a href="#palestras" title="Palestras">Palestras</a></li>
@@ -44,24 +49,29 @@ $(document).ready(function(){
                 <li><a href="#patrocinadores" title="Patrocinadores">Patrocinadores</a></li>
             </ul>
         </div>
-        
+
         <div class="content-header">
             <div class="release">
                 <h2>O Evento</h2>
-                
+
                 <p>O <strong>FrontInRio</strong> é uma oportunidade da comunidade de desenvolvimento Front-end fluminense se conhecer e se aprimorar. Compartilhando experiências para o bem comum.</p>
-                
+
                 <!-- <div class="assuntos"><img src="img/assuntos.png" alt="HTML5, CSS3 e Javascript" /></div> -->
-               
-               	<div class="dia">02</div> 
+
+               	<div class="dia">02</div>
                	<div class="mes">de<span>Junho</span></div>
             </div>
-            
+
             <div class="participar">
+                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                <form id="form_pagseguro" target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+                    <input type="hidden" name="code" value="E9C30DF83F3F257224E6CF8F79FD3404" />
+                </form>
+                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                 <div class="infos-participar">
                     <div class="preco-normal">R$<span>35</span>,00</div>
                 </div>
-                <a href="#" title="Participar!" class="btn-participar">Participar</a><!-- 
+                <a href="#" title="Participar!" class="btn-participar">Participar</a><!--
                 <p>após 20 de maio R$ 55,00.</p> -->
             </div>
 		</div>
@@ -70,24 +80,24 @@ $(document).ready(function(){
 
 <hr />
 
-<div id="content">    
+<div id="content">
     <div class="wrapper">
-        
+
         <div id="informacoes">
             <h2>Informações do Evento</h2>
 
             <p>Evento criado para Desenvolvedores Front-end do Rio de Janeiro</p>
             <p>Horario: 9h as 18:00<br />Dúvidas: <strong>contato@frontinrio.com.br</strong></p>
-            
+
             <address>UNIRIO - Av. Pasteur, 296 - Urca, Rio de Janeiro, RJ</address>
-            
+
             <div id="mapa">
                 <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=Av.+Pasteur,+296+-+Urca,+rj&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Pasteur,+296+-+Urca,+Rio+de+Janeiro,+22290-240,+Brazil&amp;ll=-22.952677,-43.171814&amp;spn=0.003552,0.006968&amp;t=v&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
             </div>
         </div><!-- /mapa -->
     	<div id="palestras">
         	<h2>Palestras</h2>
-            
+
             <ul>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-credenciamento.jpg" alt="credenciamento" /></div>
@@ -143,25 +153,25 @@ $(document).ready(function(){
                 </li>
             </ul>
         </div><!-- /palestrantes -->
-        
+
         <div id="evento">
         	<h2>Inscrições</h2>
-            
+
         	<a href="#" title="Participar!" class="btn-participar">Participar</a>
         	<p>Para se inscrever como um grupo, o grupo terá que fazer uma lista com nome e-mail de cada integrante e mandar um email para <strong>contato@frontinrio.com.br</strong></p>
-            
+
         </div>
-        
+
         <div id="patrocinadores">
         	<h2>Patrocinadores</h2>
-            
+
             <ul>
                 <li>
                     <a href="http://www.globo.com" title="patrocinador"><img src="img/partner-globocom.png" alt="globocom" /></a>
                 </li>
             </ul>
             <h2>Apoios</h2>
-            
+
             <ul>
                 <li>
                     <a href="http://www.infnet.com.br" title="apoio"><img src="img/partner-infnet.png" alt="infnet" /></a>

@@ -3,11 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Front in Rio 2012</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
-    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+    $('a[href^="#"]').not('.btn-participar').bind('click.smoothscroll',function (e) {
         e.preventDefault();
 
         var target = this.hash,
@@ -20,7 +20,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".participar .btn-participar").unbind().bind('click', function(e){
+    $(".btn-participar").on('click', function(e){
         e.preventDefault();
         $("#form_pagseguro").submit();
     });

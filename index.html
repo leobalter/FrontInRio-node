@@ -1,169 +1,174 @@
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-BR"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt-BR"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt-BR"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-BR"> <!--<![endif]-->
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Front in Rio 2012</title>
 
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
-
-	<title>FrontInRio 2012</title>
-  
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
-	<link rel="stylesheet" href="stylesheets/app.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
-
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-	
-	<script src="javascripts/modernizr.foundation.js"></script>
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<link rel="stylesheet" href="css/reset.css" media="screen" />
+<link rel="stylesheet" href="css/styles.css" media="screen" />
 
 </head>
+
 <body>
 
-	<!-- container -->
-	<div class="container">
-
-		<div class="row">
-			<div class="twelve columns">
-				<h1>FrontInRio 2012</h1>
-				<p>O maior evento de desenvolvimento FrontEnd no Rio de Janeiro!</p>
-				<hr />
-			</div>
+<div id="header">
+	<div class="wrapper">
+        <div class="content-header">
+            <h1 id="logo"><a href="#" title="Front in Rio">Front in Rio 2012</a></h1>
+            
+            <!-- <ul class="social">
+                <li class="twitter"><a href="http://www.twitter.com/" title="Twitter">Twitter</a></li>
+                <li class="facebook"><a href="http://www.facebook.com/" title="Facebook">Facebook</a></li>
+            </ul> -->
+            
+            <ul class="nav">
+                <li><a href="#informacoes" title="O Evento">O Evento</a></li>
+                <li><a href="#palestras" title="Palestras">Palestras</a></li>
+                <!-- <li><a href="#contato" title="Contato">Contato</a></li> -->
+                <li><a href="#patrocinadores" title="Patrocinadores">Patrocinadores</a></li>
+            </ul>
+        </div>
+        
+        <div class="content-header">
+            <div class="release">
+                <h2>O Evento</h2>
+                
+                <p>O <strong>FrontInRio</strong> é uma oportunidade da comunidade de desenvolvimento Front-end fluminense se conhecer e se aprimorar. Compartilhando experiências para o bem comum.</p>
+                
+                <!-- <div class="assuntos"><img src="img/assuntos.png" alt="HTML5, CSS3 e Javascript" /></div> -->
+               
+               	<div class="dia">02</div> 
+               	<div class="mes">de<span>Junho</span></div>
+            </div>
+            
+            <div class="participar">
+                <div class="infos-participar">
+                    <div class="preco-normal">R$<span>35</span>,00</div>
+                </div>
+                <a href="#" title="Participar!" class="btn-participar">Participar</a><!-- 
+                <p>após 20 de maio R$ 55,00.</p> -->
+            </div>
 		</div>
+    </div>
+</div>
 
-		<div class="row">
-			<div class="eight columns">
-				<h2>Sobre o evento</h2>
+<hr />
 
-				<h3>O que é?</h3>
-				<p>O FrontInRio é uma oportunidade da comunidade de desenvolvimento front-end fluminense se conhecer e se aprimorar. Compartilhando experiências para o bem comum.</p>
+<div id="content">    
+    <div class="wrapper">
+        
+        <div id="informacoes">
+            <h2>Informações do Evento</h2>
 
-				<h3>Quando será</h3>
-				<p>O evento vai rolar no dia 02 de junho de 2012, a partir das 8h até o #horaextra no final do dia.</p>
-			</div>
+            <p>Evento criado para Desenvolvedores Front-end do Rio de Janeiro</p>
+            <p>Horario: 9h as 18:00<br />Dúvidas: <strong>contato@frontinrio.com.br</strong></p>
+            
+            <address>UNIRIO - Av. Pasteur, 296 - Urca, Rio de Janeiro, RJ</address>
+            
+            <div id="mapa">
+                <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=+&amp;q=Av.+Pasteur,+296+-+Urca,+rj&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Pasteur,+296+-+Urca,+Rio+de+Janeiro,+22290-240,+Brazil&amp;ll=-22.952677,-43.171814&amp;spn=0.003552,0.006968&amp;t=v&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+            </div>
+        </div><!-- /mapa -->
+    	<div id="palestras">
+        	<h2>Palestras</h2>
+            
+            <ul>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-credenciamento.jpg" alt="credenciamento" /></div>
+                    <h3><span>08:30 - 09:10</span> Credenciamento e socialização</h3>
+                </li>
+            	<li>
+                	<div class="foto-palestrante"><img src="img/foto-andrews.jpg" alt="Andrews Medina" /></div>
+                    <h3><span>09:10 - 10:00</span> Realtime web applications</h3>
+                    <h4>Andrews Medina <a href="http://www.twitter.com/andrewsmedina" title="Twitter @andrewsmedina">@andrewsmedina</a></h4>
+                    <p>-</p>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-reinaldoferraz.jpg" alt="Reinaldo Ferraz" /></div>
+                    <h3><span>10:10 - 11:00</span> <i>Título da palestra ainda não definido</i></h3>
+                    <h4>Reinaldo Ferraz <a href="http://www.twitter.com/reinaldoferraz" title="Twitter @reinaldoferraz">@reinaldoferraz</a></h4>
+                    <p>Desde 2004 é webmaster do NIC.br, onde administra os sites da instituição, incluindo atividades de codificação sobre os padrões web e adequação para acessibilidade, temas sobre os quais apresenta palestras ao redor do país. Pós-graduado em Design de Hipermídia, pela Anhembi-Morumbi.</p>
+                </li>
+            	<li>
+                	<div class="foto-palestrante"><img src="img/foto-bernardo.jpg" alt="Bernardo Heynemann" /></div>
+                    <h3><span>11:10 - 12:00</span> Responsive Design Sem Mitos</h3>
+                    <h4>Bernardo Heynemann <a href="http://www.twitter.com/heynemann" title="Twitter @heynemann">@heynemann</a></h4>
+                    <p>Atual líder técnico da home da Globo.com. Possui mais de 15 anos de experiência em desenvolvimento de software. Criador dos projetos Pyccuracy, Skink, Ion, Thumbor e pyVows. Responsável direto pela implementação de responsive design nos portais <a href="http://etc.globo.com" title="etc.globo.com">etc.globo.com</a> e <a href="http://www.globo.com" title="www.globo.com">www.globo.com</a>.</p>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-almoco.jpg" alt="Almoço" /></div>
+                    <h3><span>12:00 - 13:00</span> Almoço</h3>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-leobalter.jpg" alt="Leo Balter" /></div>
+                    <h3><span>13:10 - 14:00</span> Novo Cinto de Utilidades do Desenvolvedor JavaScript, WebAPIs e Open Web</h3>
+                    <h4>Leo Balter <a href="http://www.twitter.com/leobalter" title="Twitter @leobalter">@leobalter</a></h4>
+                    <p>Leo Balter é Representante Mozilla e desenvolvedor FrontEnd na Estante Virtual além de membro do RioJS. Apaixonado pela Web e tecnologias abertas que a integram, atualmente está engajado em alguns projetos open source como o B2G, MDN e outros relacionados a OpenData no Brasil.</p>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-zenorocha.jpg" alt="Zeno Rocha" /></div>
+                    <h3><span>15:10 - 16:00</span> Pré-processadores de CSS</h3>
+                    <h4>Zeno Rocha <a href="http://www.twitter.com/zenorocha" title="Twitter @zenorocha">@zenorocha</a></h4>
+                    <p>Um dos criadores do jQuery Boilerplate e do Wormz do Chrome Experiments. Já foi desenvolvedor de software na Petrobras e hoje trabalha no Globoesporte.com. Tem 21 anos e é estudante de Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro - UNIRIO.</p>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-bernard.jpg" alt="Bernard De Luna" /></div>
+                    <h3><span>16:10 - 17:00</span> Estilizando Folhas de Estilo com Estilo</h3>
+                    <h4>Bernard De Luna <a href="http://www.twitter.com/bernarddeluna" title="Twitter @bernarddeluna">@bernarddeluna</a></h4>
+                    <p>Atua em Design de interfaces e Desenvolvimento front-end há mais de 14 anos, já tendo trabalhado em diversos projetos no Brasil, EUA, Inglaterra e Austrália. Nos últimos 2 anos liderou o Front-end da Petrobras no RJ e atualmente é UX e Diretor Criativo da Melt DSP em São Paulo.</p>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-mesa.jpg" alt="Mesa Redonda" /></div>
+                    <h3><span>17:10 - 18:00</span> Mesa Redonda</h3>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-horaextra.jpg" alt="#horaextra" /></div>
+                    <h3><span>18:10 em diante</span> #horaextra (conversas e bebidas)</h3>
+                </li>
+            </ul>
+        </div><!-- /palestrantes -->
+        
+        <div id="evento">
+        	<h2>Inscrições</h2>
+            
+        	<a href="#" title="Participar!" class="btn-participar">Participar</a>
+        	<p>Para se inscrever como um grupo, o grupo terá que fazer uma lista com nome e-mail de cada integrante e mandar um email para <strong>contato@frontinrio.com.br</strong></p>
+            
+        </div>
+        
+        <div id="patrocinadores">
+        	<h2>Patrocinadores</h2>
+            
+            <ul>
+                <li>
+                    <a href="#" title="patrocinador"><img src="img/partner-globocom.png" alt="globocom" /></a>
+                </li>
+            </ul>
+            <h2>Apoios</h2>
+            
+            <ul>
+                <li>
+                    <a href="#" title="apoio"><img src="img/partner-infnet.png" alt="infnet" /></a>
+                </li>
+                <li>
+                    <a href="#" title="apoio"><img src="img/partner-mozilla.png" alt="mozilla" /></a>
+                </li>
+                <li>
+                    <a href="#" title="apoio"><img src="img/partner-imasters.png" alt="iMasters" /></a>
+                </li>
+                <li>
+                    <a href="#" title="apoio"><img src="img/partner-unirio.png" alt="UniRio" /></a>
+                </li>
+            </ul>
+        </div><!-- /patrocinadores -->
+    </div>
+</div>
 
-			<div class="four columns">
-				<section id="map_canvas"></section>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="eight columns">
-				<h3>The Grid</h3>
+<hr />
 
-				<!-- Grid Example -->
-				<div class="row">
-					<div class="twelve columns">
-						<div class="panel">
-							<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="six columns">
-						<div class="panel">
-							<p>Six columns</p>
-						</div>
-					</div>
-					<div class="six columns">
-						<div class="panel">
-							<p>Six columns</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="four columns">
-						<div class="panel">
-							<p>Four columns</p>
-						</div>
-					</div>
-					<div class="four columns">
-						<div class="panel">
-							<p>Four columns</p>
-						</div>
-					</div>
-					<div class="four columns">
-						<div class="panel">
-							<p>Four columns</p>
-						</div>
-					</div>
-				</div>
-
-				<h3>Tabs</h3>
-				<dl class="tabs">
-					<dd><a href="#simple1" class="active">Simple Tab 1</a></dd>
-					<dd><a href="#simple2">Simple Tab 2</a></dd>
-					<dd><a href="#simple3">Simple Tab 3</a></dd>
-				</dl>
-
-				<ul class="tabs-content">
-					<li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?</li>
-					<li id="simple2Tab">This is simple tab 2's content. Now you see it!</li>
-					<li id="simple3Tab">This is simple tab 3's content. It's, you know...okay.</li>
-				</ul>
-
-				<h3>Buttons</h3>
-				
-				<div class="row">
-					<div class="six columns">
-						<p><a href="#" class="small blue button">Small Blue Button</a></p>
-						<p><a href="#" class="blue button">Medium Blue Button</a></p>
-						<p><a href="#" class="large blue button">Large Blue Button</a></p>
-		
-						<p><a href="#" class="nice radius small blue button">Nice Blue Button</a></p>
-						<p><a href="#" class="nice radius blue button">Nice Blue Button</a></p>
-						<p><a href="#" class="nice radius large blue button">Nice Blue Button</a></p>
-					</div>
-					<div class="six columns">
-						<p><a href="#" class="small red button">Small Red Button</a></p>
-						<p><a href="#" class="green button">Medium Green Button</a></p>
-						<p><a href="#" class="large white button">Large White Button</a></p>
-		
-						<p><a href="#" class="nice radius small red button">Nice Red Button</a></p>
-						<p><a href="#" class="nice radius green button">Nice Green Button</a></p>
-						<p><a href="#" class="nice radius large white button">Nice White Button</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="four columns">			
-				<h4>Getting Started</h4>
-				<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-				<h4>Other Resources</h4>
-				<p>Once you've exhausted the fun in this document, you should check out:</p>
-				<ul class="disc">
-					<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-					<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-					<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-	<!-- container -->
-
-
-
-
-	<!-- Included JS Files -->
-	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/foundation.js"></script>
-	<script src="javascripts/app.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.4&sensor=false&language=pt-BR"></script>
-	<script src="javascripts/source.js"></script>
+<div class="footer">
+	<a href="#header" title="voltar para o topo" class="subir">Voltar para o topo</a>
+</div>
 
 </body>
 </html>

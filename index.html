@@ -3,11 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Front in Rio 2012</title>
+<link rel="stylesheet" href="css/reset.css" media="screen" />
+<link rel="stylesheet" href="css/styles.css" media="screen" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
 <script type="text/javascript">
 $(document).ready(function(){
-    $('a[href^="#"]').not('.btn-participar').bind('click.smoothscroll',function (e) {
+    $('a[href^="#"]').on('click.smoothscroll',function (e) {
         e.preventDefault();
 
         var target = this.hash,
@@ -19,15 +20,8 @@ $(document).ready(function(){
             window.location.hash = target;
         });
     });
-
-    // $(".btn-participar").on('click', function(e){
-    //     e.preventDefault();
-    //     $("#form_pagseguro").submit();
-    // });
 });
 </script>
-<link rel="stylesheet" href="css/reset.css" media="screen" />
-<link rel="stylesheet" href="css/styles.css" media="screen" />
 </head>
 
 <body>
@@ -63,16 +57,10 @@ $(document).ready(function(){
             </div>
 
             <div class="participar">
-                <!-- INICIO FORMULARIO BOTAO PAGSEGURO 
-                <form id="form_pagseguro" target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
-                    <input type="hidden" name="code" value="E9C30DF83F3F257224E6CF8F79FD3404" />
-                </form>
-                <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                 <div class="infos-participar">
                     <div class="preco-normal">R$<span>35</span>,00</div>
                 </div>
-                <a href="http://eventick.com.br/frontinrio/inscricao?ticket_id=506" title="Participar!" class="btn-participar">Participar</a><!--
-                <p>após 20 de maio R$ 55,00.</p> -->
+                <a href="http://eventick.com.br/frontinrio/inscricao?ticket_id=506" title="Participar!" class="btn-participar">Participar</a>
             </div>
 		</div>
     </div>

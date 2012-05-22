@@ -20,10 +20,10 @@ $(document).ready(function(){
         });
     });
 
-    $(".btn-participar").on('click', function(e){
-        e.preventDefault();
-        $("#form_pagseguro").submit();
-    });
+    // $(".btn-participar").on('click', function(e){
+    //     e.preventDefault();
+    //     $("#form_pagseguro").submit();
+    // });
 });
 </script>
 <link rel="stylesheet" href="css/reset.css" media="screen" />
@@ -63,7 +63,7 @@ $(document).ready(function(){
             </div>
 
             <div class="participar">
-                <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                <!-- INICIO FORMULARIO BOTAO PAGSEGURO 
                 <form id="form_pagseguro" target="pagseguro" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
                     <input type="hidden" name="code" value="E9C30DF83F3F257224E6CF8F79FD3404" />
                 </form>
@@ -71,7 +71,7 @@ $(document).ready(function(){
                 <div class="infos-participar">
                     <div class="preco-normal">R$<span>35</span>,00</div>
                 </div>
-                <a href="#" title="Participar!" class="btn-participar">Participar</a><!--
+                <a href="http://eventick.com.br/frontinrio/inscricao?ticket_id=506" title="Participar!" class="btn-participar">Participar</a><!--
                 <p>após 20 de maio R$ 55,00.</p> -->
             </div>
 		</div>
@@ -97,23 +97,23 @@ $(document).ready(function(){
         </div><!-- /mapa -->
     	<div id="palestras">
         	<h2>Palestras</h2>
-
+            <p>Grade sujeita a alteração :)</p>
             <ul>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-credenciamento.jpg" alt="credenciamento" /></div>
-                    <h3><span>08:30 - 09:10</span> Credenciamento e socialização</h3>
+                    <h3><span>09:00 - 09:30</span> Credenciamento e socialização</h3>
                 </li>
             	<li>
                 	<div class="foto-palestrante"><img src="img/foto-andrews.jpg" alt="Andrews Medina" /></div>
-                    <h3><span>09:10 - 10:00</span> Testando Interfaces Web</h3>
+                    <h3><span>09:30 - 10:20</span> Testando Interfaces Web</h3>
                     <h4>Andrews Medina <a href="http://www.twitter.com/andrewsmedina" title="Twitter @andrewsmedina">@andrewsmedina</a></h4>
                     <p>Apenas um rapaz latino americano, entusiasta de Python, Django e TDD, Andrews atua como desenvolvedor web na globo.com. Nos momentos livres dedica-se ao rock, surf, skate e no desenvolvimento de projetos open source. Participa da liderança da comunidade djangobrasil, é moderador da lista pythonbrasil e co-fundador do #cobrateam.</p>
                 </li>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-reinaldoferraz.jpg" alt="Reinaldo Ferraz" /></div>
-                    <h3><span>10:10 - 11:00</span> <i>Título da palestra ainda não definido</i></h3>
+                    <h3><span>10:20 - 11:10</span> HTML5, WAI/ARIA e Acessibilidade</h3>
                     <h4>Reinaldo Ferraz <a href="http://www.twitter.com/reinaldoferraz" title="Twitter @reinaldoferraz">@reinaldoferraz</a></h4>
-                    <p>Desde 2004 é webmaster do NIC.br, onde administra os sites da instituição, incluindo atividades de codificação sobre os padrões web e adequação para acessibilidade, temas sobre os quais apresenta palestras ao redor do país. Pós-graduado em Design de Hipermídia, pela Anhembi-Morumbi.</p>
+                    <p>Especialista em Desenvolvimento Web do W3C Brasil,  formado em desenho e computação gráfica e Pós graduado em Design de Hipermídia pela Universidade Anhembi Morumbi, em São Paulo. Especialista em padrões web, trabalha com desenvolvimento e design há mais de doze anos. Atualmente vem concentrando seus esforços na divulgação e aplicação de acessibilidade na web.</p>
                 </li>
             	<li>
                 	<div class="foto-palestrante"><img src="img/foto-bernardo.jpg" alt="Bernardo Heynemann" /></div>
@@ -123,33 +123,39 @@ $(document).ready(function(){
                 </li>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-almoco.jpg" alt="Almoço" /></div>
-                    <h3><span>12:00 - 13:00</span> Almoço</h3>
+                    <h3><span>12:00 - 13:30</span> Almoço</h3>
                 </li>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-leobalter.jpg" alt="Leo Balter" /></div>
-                    <h3><span>13:10 - 14:00</span> Novo Cinto de Utilidades do Desenvolvedor JavaScript, WebAPIs e Open Web</h3>
+                    <h3><span>13:30 - 14:20</span> Novo Cinto de Utilidades do Desenvolvedor JavaScript, WebAPIs e Open Web</h3>
                     <h4>Leo Balter <a href="http://www.twitter.com/leobalter" title="Twitter @leobalter">@leobalter</a></h4>
                     <p>Leo Balter é Representante Mozilla e desenvolvedor FrontEnd na Estante Virtual além de membro do RioJS. Apaixonado pela Web e tecnologias abertas que a integram, atualmente está engajado em alguns projetos open source como o B2G, MDN e outros relacionados a OpenData no Brasil.</p>
                 </li>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-zenorocha.jpg" alt="Zeno Rocha" /></div>
-                    <h3><span>15:10 - 16:00</span> Pré-processadores de CSS</h3>
+                    <h3><span>14:20 - 15:10</span> CSS Sucks</h3>
                     <h4>Zeno Rocha <a href="http://www.twitter.com/zenorocha" title="Twitter @zenorocha">@zenorocha</a></h4>
-                    <p>Um dos criadores do jQuery Boilerplate e do Wormz do Chrome Experiments. Já foi desenvolvedor de software na Petrobras e hoje trabalha no Globoesporte.com. Tem 21 anos e é estudante de Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro - UNIRIO.</p>
+                    <p>Um dos criadores do <a href="http://jqueryboilerplate.com/">jQuery Boilerplate</a> e do <a href="http://html5-pro.com/wormz/">Wormz</a> do <a href="http://www.chromeexperiments.com/detail/wormz/">Chrome Experiments</a>. Já foi desenvolvedor de software na <a href="http://www.petrobras.com/en/home.htm">Petrobras</a> e hoje trabalha no <a href="http://globoesporte.com" target="_blank" title="Globo Esporte">Globoesporte.com</a>. Tem 21 anos e é estudante de Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro - <a href="http://www.uniriotec.br/">UNIRIO.</a>​</p>
+                </li>
+                <li>
+                    <div class="foto-palestrante"><img src="img/foto-coffee.jpg" alt="Coffee Break" /></div>
+                    <h3><span>15:10 - 15:40</span> Coffee Break</h3>
                 </li>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-bernard.jpg" alt="Bernard De Luna" /></div>
-                    <h3><span>16:10 - 17:00</span> Estilizando Folhas de Estilo com Estilo</h3>
+                    <h3><span>15:40 - 16:30</span> Estilizando Folhas de Estilo com Estilo</h3>
                     <h4>Bernard De Luna <a href="http://www.twitter.com/bernarddeluna" title="Twitter @bernarddeluna">@bernarddeluna</a></h4>
                     <p>Atua em Design de interfaces e Desenvolvimento front-end há mais de 14 anos, já tendo trabalhado em diversos projetos no Brasil, EUA, Inglaterra e Austrália. Nos últimos 2 anos liderou o Front-end da Petrobras no RJ e atualmente é UX e Diretor Criativo da Melt DSP em São Paulo.</p>
                 </li>
                 <li>
-                    <div class="foto-palestrante"><img src="img/foto-mesa.jpg" alt="Mesa Redonda" /></div>
-                    <h3><span>17:10 - 18:00</span> Mesa Redonda</h3>
+                    <div class="foto-palestrante"><img src="img/foto-7masters.jpg" alt="7Masters" /></div>
+                    <h3><span>16:30 - 18:00</span> 7Masters Front-end</h3>
+                    <h4><a href="http://setemasters.imasters.com.br/index.html" title="7Masters iMasters">Site 7Masters</a></h4>
+                    <p>O 7Masters é um encontro promovido pelo iMasters, onde 7 dos principais especialistas de um determinado tema apresentam situações inovadoras que estão realizando.</p>
                 </li>
                 <li>
                     <div class="foto-palestrante"><img src="img/foto-horaextra.jpg" alt="#horaextra" /></div>
-                    <h3><span>18:10 em diante</span> #horaextra (conversas e bebidas)</h3>
+                    <h3><span>18:00 em diante</span> #horaextra (conversas e bebidas)</h3>
                 </li>
             </ul>
         </div><!-- /palestrantes -->
@@ -157,7 +163,7 @@ $(document).ready(function(){
         <div id="evento">
         	<h2>Inscrições</h2>
 
-        	<a href="#" title="Participar!" class="btn-participar">Participar</a>
+        	<a href="http://eventick.com.br/frontinrio/inscricao?ticket_id=506" title="Participar!" class="btn-participar">Participar</a>
         	<p>Para se inscrever como um grupo, o grupo terá que fazer uma lista com nome e-mail de cada integrante e mandar um email para <strong>contato@frontinrio.com.br</strong></p>
 
         </div>
@@ -193,6 +199,9 @@ $(document).ready(function(){
                 </li>
                 <li>
                     <a href="http://eventick.com.br/" title="apoio"><img src="img/partner-eventick.png" alt="Eventick" /></a>
+                </li>
+                <li>
+                    <a href="http://www.caelum.com.br/" title="apoio"><img src="img/partner-caelum.png" alt="Caelum" /></a>
                 </li>
             </ul>
         </div><!-- /patrocinadores -->
